@@ -1,0 +1,87 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.slide {
+  width: 286px;
+  height: 79px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 14px;
+  line-height: 18.2px;
+  border: 3px solid var(--color-primary);
+  border-radius: 35px 0 35px 0;
+  background: rgba(255, 255, 255, 0.3);
+  color: var(--color-secondary);
+  position: absolute;
+  box-shadow: 0px 4px 15px 0px rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(15px);
+}
+
+.slide::after {
+  content: url("./src/vector.svg");
+  position: absolute;
+  right: -16px;
+  top: -7px;
+  width: 18px;
+  height: 31px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ellipse {
+  width: 51px;
+  height: 51px;
+  background: rgba(94, 118, 0, 1);
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  border: 1px solid var(--color-primary);
+}
+
+.line {
+  position: absolute;
+  z-index: -1;
+}
+
+.slide p {
+  width: 195px;
+}
+
+.block-1 {
+  top: 28.5%;
+  left: 5.5%;
+}
+.block-2 {
+  top: 52.5%;
+  left: 11%;
+}
+.block-3 {
+  top: 64%;
+  left: 37.5%;
+}
+.block-4 {
+  top: 40%;
+  left: 32.5%;
+}
+.block-5 {
+  top: 33.5%;
+  left: 70.5%;
+}
+.block-6 {
+  top: 49.5%;
+  left: 59.5%;
+}
+
+.btn-box {
+  display: none;
+}
